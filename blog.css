@@ -1,0 +1,232 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#home {
+    background-image: none;
+    margin-bottom: 8vw;
+    color: transparent;
+    background-color: transparent;
+    position: relative;
+    top: 100px;
+    padding: 0 10px;
+
+}
+
+#home a {
+    width: 100%;
+    padding: 0 !important;
+    background-color: transparent;
+}
+
+#home a video {
+    width: 100%;
+    filter: brightness(0.5);
+    transition: 0.3s ease;
+    cursor: none;
+}
+
+#home h2 {
+    padding-bottom: 15px;
+    position: relative;
+    top: -60%;
+    transform: translateY(-50%);
+    cursor: none;
+    font-size: 5rem;
+    color: #00854a;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2.5px);
+    line-height: 90px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+#home h2:hover {
+    color: transparent;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 0;
+
+}
+
+.self-cursor {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(12, 12, 12, 0.7);
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: rgb(70, 70, 148); */
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 3px solid rgb(21, 67, 133);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#blog-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+    /* background-color: rgba(0, 133, 74, 0.5); */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#blog-container .blogs {
+    width: 60%;
+}
+
+#blog-container .blogs .post {
+    padding-bottom: 60px;
+}
+
+#blog-container .blogs .post video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+#blog-container .blogs h2 {
+    color: rgb(34, 115, 153);
+    padding: 15px 0px 10px 0;
+}
+
+#blog-container .blogs p {
+    color: #eee;
+    padding-bottom: 20px;
+}
+
+#blog-container .blogs p::selection {
+    color: #00ab5e;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#blog-container .blogs .post a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: rgb(21, 21, 100);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#blog-container .post-blogs .post a {
+    margin-top: 20px;
+}
+
+#blog-container .post-blogs hr {
+    margin-bottom: 20px;
+}
+
+#blog-container .post-blogs {
+    width: 60%;
+    margin: 0 auto;
+    /* padding: 100px; */
+}
+
+#blog-container .post-blogs p {
+    text-align: justify;
+}
+
+
+#blog-container .cate {
+    width: 30%;
+}
+
+#blog-container .cate h2 {
+    padding-bottom: 7px;
+    color: #fff;
+}
+
+#blog-container .cate a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #777;
+    line-height: 45px;
+    transition: 0.3s ease;
+}
+
+#blog-container .cate a:hover {
+    color: #fff;
+}
+
+#noBtn {
+    text-decoration: none;
+    font-size: auto;
+    padding: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0;
+    font-weight: 0;
+    cursor: none;
+}
+
+#postTab {
+    background-color: #fff;
+}
+
+@media (max-width: 769px) {
+    #home h2 {
+        top: -20%;
+        /* transform: translateY(-50%); */
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    #blog-container {
+        padding: 8vw 4vw;
+    }
+
+    #blog-container .post-blogs {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #blog-container .post-blogs video {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 475px) {
+    #home h2 {
+        top: -18%;
+        font-size: 1.5rem;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    #blog-container {
+        flex-direction: column;
+    }
+
+    #blog-container .blogs {
+        width: 100%;
+    }
+
+    #blog-container .cate {
+        width: 100%;
+    }
+
+    #blog-container .post-blogs {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #blog-container .post-blogs video {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+}
+

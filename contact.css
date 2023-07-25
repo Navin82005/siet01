@@ -1,0 +1,166 @@
+.contact {
+    padding: 8vw;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.cHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    flex-direction: column;
+}
+
+.cHeading p {
+    color: #aaa;
+}
+
+.contact .left {
+    width: 50%;
+    padding: 0 3vw;
+    display: inline;
+}
+
+.contact .left .itm {
+    position: relative;
+    display: flex;
+    margin: 3vw 0;
+}
+
+.contact .left .itm .detials h2 {
+    color: rgb(21, 144, 226);
+    font-weight: 550;
+}
+
+.contact .left .itm .icn {
+    padding-right: 20px;
+}
+
+.contact .left .itm .icn i {
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.contact .left .itm .detials p {
+    color: gray;
+    max-width: 300px;
+}
+
+.contact .right {
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact .right h2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(21, 144, 226);
+    font-weight: 550;
+    padding-top: 25px;
+}
+
+.contact .right .field {
+    height: auto;
+    padding: 0 20px;
+}
+
+.field .container label {
+    position: absolute;
+    font-size: 17px;
+    top: 17px;
+    pointer-events: none;
+    color: gray;
+    transition: all 0.2s ease;
+}
+
+.field .container input,
+.field .container textarea {
+    padding-left: 2px;
+}
+
+.field .container input:focus ~ label,
+.field .container input:valid ~ label {
+    transform: translateY(-17px);
+}
+
+.contact .right .field .container textarea {
+    resize: none;
+    height: 100%;
+}
+
+.contact .right .field .button {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.contact .right .field .button button {
+    padding: 10px 30px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(21, 144, 226);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.contact .right .field .button button:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 4vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contact .left {
+        width: 80%;
+        padding: 5vw;
+    }
+}
+
+
+@media (max-width: 467px) {
+    .contact {
+        padding: 1vw;
+    }
+
+    .field {
+        width: 350px;
+    }
+
+    .contact .left .itm .icn i {
+        font-size: .8rem;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .contact .left .itm .icn {
+        padding-right: 10px;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: .7rem;
+    }
+
+}

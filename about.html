@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Shakthi Institute</title>
+    <!-- <link rel="stylesheet" href="https://tinyurl.com/2l7zmdd4"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="loader">
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+    </div>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/siet.png" alt="">
+        <div class="navigation">
+            <ul id="navingright">
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#home" id="navActive">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cources.html">Courses</a></li>
+                <li><a href="contect.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>About SIET</h2>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <h1>Mission of the Institute</h1>
+        <p>
+            <!-- Tell me and I'll forget; show me and I may remember; involve me and I'll understand. -->
+            To Provide an encouraging environment to develop the intellectual capacity, critical thinking, creativity and problem solving ability of the students.
+        </p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-circle-nodes"></i>
+                <h3>Intellectual capacity</h3>
+                <!-- <p>Tell me and I'll forget; show me and I may remember; involve me and I'll understand.</p> -->
+                <p><q>Intellectual capacity is a precondition for becoming a man of knowledge.</q> one's intellectual capacity. <q>Intellectual capacity is the key to solving any complex problem.</q></p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-brands fa-ideal"></i>
+                <h3>Critical thinking</h3>
+                <p>It is the mark of an educated mind to be able to entertain a thought without accepting it.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+                <!-- <i class="fa-solid fa-location-dot"></i> -->
+                <h3>Creativity and problem solving ability</h3>
+                <p>We can not solve our problems with the same level of thinking that created them. To increase the student's ability to creak a problem and solve it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Registration -->
+    <section id="eventRegistration">
+        
+        <div class="reminder">
+            <p>Participate in 20+ competitions</p>
+            <h1>Register to Participate in Kalam</h1>
+            <div class="time">
+                <div class="date">
+                    <span id="days">00</span><br>Days
+                </div>
+                <div class="date">
+                    <span id="hours">00</span><br>Hours
+                </div>
+                <div class="date">
+                    <span id="mins">00</span><br>Minutes
+                </div>
+                <div class="date">
+                    <span id="secs">00</span><br>Seconds
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <h1>Join Now!</h1>
+            <form onsubmit="return eventPost()">
+                <input type="text" id="eName" placeholder="Name" value="" name="name" required><br>
+                <input type="text" id="eEmail" placeholder="Email Address" value="" name="eMail" required><br>
+                <input type="text" id="ePno" placeholder="Phone Number" value="" name="pNum" required><br>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="popup" id="eventPupup">
+                <img src="images/404-tick.png" alt="">
+                <h2>Thank You For Registering!</h2>
+                <p>click here to join whatsapp group<br>
+                <a href="https://chat.whatsapp.com/FSbPuyodWEy5ajVBCbQhwB" target="_blank">Join Group</a></p>
+                <button type="button" id="eventPupupOK">OK</button>
+            </div>
+            <div class="popup" id="eventPupupError">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="XCircle"><rect width="256" height="256" fill="none"></rect><path d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm37.65625,130.34375a7.99915,7.99915,0,1,1-11.3125,11.3125L128,139.3125l-26.34375,26.34375a7.99915,7.99915,0,0,1-11.3125-11.3125L116.6875,128,90.34375,101.65625a7.99915,7.99915,0,0,1,11.3125-11.3125L128,116.6875l26.34375-26.34375a7.99915,7.99915,0,0,1,11.3125,11.3125L139.3125,128Z" fill="red" class="color000000 svgShape"></path></svg> -->
+                <img src="images/x-circle-eps.png" alt="">
+                <h2>Oops!<br>Something Went Wrong</h2>
+                <p>Unable to connect to server. Try again after some time.<br></p>
+                <button type="button" id="eventPupupErrorOK">OK</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="eventRegistration">
+        <video src="images/back.mp4"></video>
+    </section> -->
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <h1>TESTIMONIALS</h1>
+
+        <div class="testimonials-box">
+            
+            <div class="review">
+                <img src="images/r2.png" alt="">
+                <h6>Mr. Hari hara Sudhan,<span> Johnson Controls, Pune</span></h6>
+                <p>
+                    Clean ambience and well equipped labs. Engineering Exploration laboratory is much appreciable one, which helps the students to encourage their innovative skills.
+                </p>
+            </div>
+            <div class="review">
+                <img src="images/r1.png" alt="">
+                <h6>
+                    Mr. R. Radhakrishnan,<span> Project Management Consultancy Articles</span>
+                </h6>
+                <p>
+                    Excellent infrastructure and computer labs. The course curriculum is framed in such a way which matches and fulfills the industry requirements.
+                </p>
+            </div>
+            <div class="review">
+                <img src="images/r3.png" alt="">
+                <h6>
+                    Mr. T. Kirubakaran, <span> Test and Verification Solution (P)Ltd</span>
+                </h6>
+                <p>
+                    Amazing Infrastructure with well equipped laboratories. Well trained faculties with industrial experience.
+                </p>
+            </div>
+            <div class="review">
+                <img src="images/r4.png" alt="">
+                <h6>
+                    Mr. Sugathan S Nair, <span> Bureau Veritas (India) Ltd</span>
+                </h6>
+                <p>
+                    Admirable infrastructure & an emerging course with the appreciable laboratories.
+                </p>
+            </div>
+            <div class="review">
+                <img src="images/r5.png" alt="">
+                <h6>
+                    Mr. M.Kumar, <span> Ducen IT</span>
+                </h6>
+                <p>
+                    Well Equipped laboratories with the updated software have been installed. This helps the students to learn more.
+                </p>
+            </div>
+            <div class="review">
+                <img src="images/r6.png" alt="">
+                <h6>
+                    Mr. Mangesh Edake, <span> Johnson Controls, Pune</span>
+                </h6>
+                <p>
+                    Amazing Infrastructure with well equipped laboratories. Students of SIET gets an opportunity to regularly interact with the industry people.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="gotoEvent">
+        <a href="#eventRegistration">
+            <img src="images/gotoEvent.png" alt="Join Event">
+            Register to Kalam
+        </a>
+    </div>
+    
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h3>Top Courses</h3>
+                <li><a href="cource.html#cse">Computer Science and Engineering</a></li>
+                <li><a href="cource.html#aids">Artificial Intelligence and Data Structures</a></li>
+                <li><a href="cource.html#aiml">Artificial Intelligence and Machine Learning</a></li>
+                <li><a href="cource.html#age">Agricultural Engineering</a></li>
+            </div>
+            <div class="footer-col">
+                <h3>Flagship Events</h3>
+                <li><a href="blog.html#kalam">Kalam</a></li>
+                <li><a href="blog.html#velan">Velan Thiruvizha</a></li>
+                <li><a href="blog.html#puff">Agathiyam</a></li>
+                <li><a href="blog.html#blitz">BLITZ</a></li>
+            </div>
+    
+            <div class="newlister footer-col">
+                <h3>NEWLISTER</h3>
+                <form action="">
+                    <input type="email" name="" id="" placeholder="Enter Email" required>
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="row copyRight">
+            <p>COPYRIGHT @ 2023 | ALL RIGHTS RESERVED<a href="#"><i class="fa-solid fa-copyright"></i></a></p>
+            <div>
+                <a target="_blank" href="https://www.facebook.com/sietcbe"><i class="footerSocialLinks fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/srishakthian"><i class="footerSocialLinks fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/lifeatsrishakthi/"><i class="footerSocialLinks fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/school/sri-shakthi-institute-of-engineering-&-technology/"><i class="footerSocialLinks fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCjGKcE03ORg9ZFu5eCrGKgg"><i class="footerSocialLinks fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://kit.fontawesome.com/9891bbb6e0.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>

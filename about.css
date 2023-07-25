@@ -1,0 +1,35 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.self-cursor {
+    width: 70px;
+    height: 70px;
+    background-color: #333;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 3px solid rgb(21, 67, 133);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.self-cursor::before {
+    content: 'Watch';
+}
+
+#home {
+    height: 60vh;
+}
+
+#features {
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+}
